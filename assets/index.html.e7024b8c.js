@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as t,c as o,a as n}from"./app.3b1ceaad.js";const c={};function r(s,_){return t(),o("div",null,[n(" 图像册寸：30:30  网站缩放工具=> https://edit.photo/   图标库=> https://www.iconfont.cn/  ")])}const m=e(c,[["render",r],["__file","index.html.vue"]]);export{m as default};
