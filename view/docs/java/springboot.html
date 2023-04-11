@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>springboot 笔记 | 须贺</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <script>
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?9146a86d484b79eb7a9fab54d0655aa0";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+          })();
+        </script>
+    <script language="javascript" type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/MouseClickEffect.js"></script>
+    <meta name="description" content="《鸟欲高飞先展翅，人求上进先读书》">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.c55ec633.css" as="style"><link rel="preload" href="/assets/js/app.7036e47e.js" as="script"><link rel="preload" href="/assets/js/4.ec8df83f.js" as="script"><link rel="preload" href="/assets/js/1.d2920358.js" as="script"><link rel="preload" href="/assets/js/2.245be42e.js" as="script"><link rel="preload" href="/assets/js/20.26398a86.js" as="script"><link rel="preload" href="/assets/js/12.44af248e.js" as="script"><link rel="prefetch" href="/assets/js/10.a2ab4732.js"><link rel="prefetch" href="/assets/js/11.cb2a446e.js"><link rel="prefetch" href="/assets/js/13.fe5d2510.js"><link rel="prefetch" href="/assets/js/14.a86b66a0.js"><link rel="prefetch" href="/assets/js/15.db93f4b6.js"><link rel="prefetch" href="/assets/js/16.315be0a7.js"><link rel="prefetch" href="/assets/js/17.bb33c2d3.js"><link rel="prefetch" href="/assets/js/18.aa3bc2d5.js"><link rel="prefetch" href="/assets/js/19.eb6674e0.js"><link rel="prefetch" href="/assets/js/21.8573d310.js"><link rel="prefetch" href="/assets/js/22.f39eb1c6.js"><link rel="prefetch" href="/assets/js/23.70b63e87.js"><link rel="prefetch" href="/assets/js/24.780f4265.js"><link rel="prefetch" href="/assets/js/25.087b890e.js"><link rel="prefetch" href="/assets/js/26.a3432377.js"><link rel="prefetch" href="/assets/js/27.c82078d0.js"><link rel="prefetch" href="/assets/js/28.3f62dff1.js"><link rel="prefetch" href="/assets/js/29.c935e9bc.js"><link rel="prefetch" href="/assets/js/30.4acfb7de.js"><link rel="prefetch" href="/assets/js/31.3bd52897.js"><link rel="prefetch" href="/assets/js/32.cd6a4df7.js"><link rel="prefetch" href="/assets/js/33.4f206021.js"><link rel="prefetch" href="/assets/js/34.ad299da7.js"><link rel="prefetch" href="/assets/js/35.a74cd3c6.js"><link rel="prefetch" href="/assets/js/36.a6d81e30.js"><link rel="prefetch" href="/assets/js/37.e3323ce2.js"><link rel="prefetch" href="/assets/js/38.18d7dd67.js"><link rel="prefetch" href="/assets/js/39.833f42ab.js"><link rel="prefetch" href="/assets/js/40.ed6400f3.js"><link rel="prefetch" href="/assets/js/41.81e6fc53.js"><link rel="prefetch" href="/assets/js/42.d0e39d51.js"><link rel="prefetch" href="/assets/js/43.047ac597.js"><link rel="prefetch" href="/assets/js/44.6e407d3e.js"><link rel="prefetch" href="/assets/js/45.234ad067.js"><link rel="prefetch" href="/assets/js/46.3eaaa14c.js"><link rel="prefetch" href="/assets/js/47.cd7ab522.js"><link rel="prefetch" href="/assets/js/48.d146214c.js"><link rel="prefetch" href="/assets/js/49.5412d8fd.js"><link rel="prefetch" href="/assets/js/5.83420c85.js"><link rel="prefetch" href="/assets/js/50.361271e2.js"><link rel="prefetch" href="/assets/js/51.2488c147.js"><link rel="prefetch" href="/assets/js/52.a5eb5e9f.js"><link rel="prefetch" href="/assets/js/53.c3859002.js"><link rel="prefetch" href="/assets/js/54.c572a44d.js"><link rel="prefetch" href="/assets/js/55.30248800.js"><link rel="prefetch" href="/assets/js/56.248288b0.js"><link rel="prefetch" href="/assets/js/57.3a11d1c7.js"><link rel="prefetch" href="/assets/js/58.95fa43c5.js"><link rel="prefetch" href="/assets/js/59.d002a857.js"><link rel="prefetch" href="/assets/js/6.5faf5a50.js"><link rel="prefetch" href="/assets/js/60.26b4ef39.js"><link rel="prefetch" href="/assets/js/61.7c152e5e.js"><link rel="prefetch" href="/assets/js/62.baeb52bb.js"><link rel="prefetch" href="/assets/js/63.8978958b.js"><link rel="prefetch" href="/assets/js/64.b14585b3.js"><link rel="prefetch" href="/assets/js/7.13c62f03.js"><link rel="prefetch" href="/assets/js/8.b2b362e0.js"><link rel="prefetch" href="/assets/js/9.0fd0389d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c55ec633.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-faf1ae92><div data-v-faf1ae92><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-faf1ae92 data-v-faf1ae92><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-5cb9a64e data-v-faf1ae92 data-v-faf1ae92><h3 class="title" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e>须贺</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><input type="password" value="" data-v-5cb9a64e> <span data-v-5cb9a64e>Konck! Knock!</span> <button data-v-5cb9a64e>OK</button></label> <div class="footer" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><span data-v-5cb9a64e><i class="iconfont reco-theme" data-v-5cb9a64e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-5cb9a64e>vuePress-theme-reco</a></span> <span data-v-5cb9a64e><i class="iconfont reco-copyright" data-v-5cb9a64e></i> <a data-v-5cb9a64e><span data-v-5cb9a64e>🎈</span>
+            
+          <span data-v-5cb9a64e>2021 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-faf1ae92><div data-v-faf1ae92><div id="smart" class="wrapper-page" style="background-image:url(/img/bjt3.jpg);background-position-x:center;background-position-y:center;background-size:cover;background-repeat-x:no-repeat;background-repeat-y:no-repeat;" data-v-faf1ae92><header class="navbar" data-v-faf1ae92><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/favicon.ico" alt="须贺" class="logo"> <span class="site-name">须贺</span></a> <div class="links"><div id="dayNightSwitch" class="generalWrapper" data-v-32f44868><a class="click" data-v-32f44868><div class="onOff daySwitch" data-v-32f44868><div class="star star1" data-v-32f44868></div> <div class="star star2" data-v-32f44868></div> <div class="star star3" data-v-32f44868></div> <div class="star star4" data-v-32f44868></div> <div class="star star5" data-v-32f44868></div> <div class="star sky" data-v-32f44868></div> <div class="sunMoon" data-v-32f44868><div class="crater crater1" data-v-32f44868></div> <div class="crater crater2" data-v-32f44868></div> <div class="crater crater3" data-v-32f44868></div> <div class="cloud part1" data-v-32f44868></div> <div class="cloud part2" data-v-32f44868></div></div></div></a></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="iconfont undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/categories/收藏/" class="nav-link"><i class="iconfont undefined"></i>
+  收藏
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/安装/" class="nav-link"><i class="iconfont undefined"></i>
+  安装
+</a></li><li class="dropdown-item"><!----> <a href="/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/踩坑/" class="nav-link"><i class="iconfont undefined"></i>
+  踩坑
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/view/reward/" class="nav-link"><i class="iconfont undefined"></i>
+  奖励
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-faf1ae92></div> <aside class="sidebar" data-v-faf1ae92><div class="personal-info-wrapper" data-v-03833281 data-v-faf1ae92><img src="/img/author.png" alt="author-avatar" class="personal-img" data-v-03833281> <h3 class="name" data-v-03833281>
+    🎈
+  </h3> <div class="num" data-v-03833281><div data-v-03833281><h3 data-v-03833281>43</h3> <h6 data-v-03833281>文章</h6></div> <div data-v-03833281><h3 data-v-03833281>32</h3> <h6 data-v-03833281>标签</h6></div></div> <hr data-v-03833281></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="iconfont undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/categories/收藏/" class="nav-link"><i class="iconfont undefined"></i>
+  收藏
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/安装/" class="nav-link"><i class="iconfont undefined"></i>
+  安装
+</a></li><li class="dropdown-item"><!----> <a href="/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/踩坑/" class="nav-link"><i class="iconfont undefined"></i>
+  踩坑
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/view/reward/" class="nav-link"><i class="iconfont undefined"></i>
+  奖励
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-5cb9a64e data-v-faf1ae92><h3 class="title" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e>springboot 笔记</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><input type="password" value="" data-v-5cb9a64e> <span data-v-5cb9a64e>Konck! Knock!</span> <button data-v-5cb9a64e>OK</button></label> <div class="footer" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><span data-v-5cb9a64e><i class="iconfont reco-theme" data-v-5cb9a64e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-5cb9a64e>vuePress-theme-reco</a></span> <span data-v-5cb9a64e><i class="iconfont reco-copyright" data-v-5cb9a64e></i> <a data-v-5cb9a64e><span data-v-5cb9a64e>🎈</span>
+            
+          <span data-v-5cb9a64e>2021 - </span>
+          2023
+        </a></span></div></div></div> <div data-v-faf1ae92><main class="page"><div class="page-title" style="display:none;"><h1 class="title">springboot 笔记</h1> <div class="page-info" data-v-0efa1f05><i class="iconfont reco-account" data-v-0efa1f05><span data-v-0efa1f05>🎈</span></i> <i class="iconfont reco-date" data-v-0efa1f05><span data-v-0efa1f05>2021-08-28</span></i> <i class="iconfont reco-eye" data-v-0efa1f05><span id="/view/docs/java/springboot.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-0efa1f05><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-0efa1f05><span class="tag-item" data-v-0efa1f05>springboot</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="springboot"><a href="#springboot" class="header-anchor">#</a> Springboot</h2> <h2 id="思维导图"><a href="#思维导图" class="header-anchor">#</a> 思维导图：</h2> <hr> <iframe src="https://www.processon.com/embed/6129fd07e0b34d3550f0cbb6" width="100%" height="500" frameborder="0" scrolling="No" leftmargin="0" topmargin="0"></iframe> <h3 id="概述"><a href="#概述" class="header-anchor">#</a> 概述</h3> <blockquote><p>Spring的顶级项目之一<a href="https://spring.io" target="_blank" rel="noopener noreferrer">https://spring.io<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>是一种快速使用Spring的方式，基于约定优于配置的思想</p></blockquote> <p><strong>功能</strong>：</p> <ul><li>自动配置</li> <li>起步依赖:依赖传递</li> <li>辅助功能</li></ul> <blockquote><p>Spring Boot 并不是对 Spring 功能上的增强，而是提供了一种快速使用 Spring 的方式</p></blockquote> <p><strong>依赖原理分析</strong>:</p> <ul><li>在spring-boot-starter-parent中定义了各种技术的版本信息，组合了一套最优搭配的技术版本。</li> <li>在各种starter中，定义了完成该功能需要的坐标合集，其中大部分版本信息来自于父工程。</li> <li>我们的工程继承parent，引入starter后，通过依赖传递，就可以简单方便获得需要的jar包，并且不会存在
+版本冲突等问题。</li></ul> <h2 id="配置"><a href="#配置" class="header-anchor">#</a> <strong>配置</strong>：</h2> <blockquote><p>SpringBoot是基于约定的，所以很多配置都有默认值，但如果想使用自己的配置替换默认配置的话，就可以使用
+application.properties或者application.yml（application.yaml）进行配置。</p></blockquote> <ul><li>pringBoot提供了2种配置文件类型：properteis和yml/yaml</li> <li>默认配置文件名称：application</li> <li>在同一级目录下优先级为：properties &gt; yml &gt; yaml</li></ul> <h3 id="yarn"><a href="#yarn" class="header-anchor">#</a> <strong>yarn:</strong></h3> <blockquote><p>YML文件是以数据为核心的，比传统的xml方式更加简洁。YAML文件的扩展名可以使用.yml或者.yaml。</p></blockquote> <p>基本语法：</p> <ul><li><p>大小写敏感</p></li> <li><p><strong>数据值前边必须有空格，作为分隔符</strong></p></li> <li><p>使用缩进表示层级关系</p></li> <li><p>缩进时<strong>不允许使用Tab键，只允许使用空格</strong>（各个系统 Tab对应的 空格数目可能不同，导致层次混乱）。</p></li> <li><p>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</p></li> <li><p><code>#</code> 表示注释，从这个字符一直到行尾，都会被解析器忽略。</p></li></ul> <p>数据格式：</p> <ul><li>对象(map)：键值对的集合。</li> <li>数组：一组按次序排列的值</li> <li>纯量：单个的、不可再分的值</li></ul> <p>参数引用：$(key)</p> <p><strong>读取配置文件内容</strong>： @Value  Environment  @ConfigurationProperties
+<strong>profile</strong>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>profile是用来完成不同环境下，配置动态切换功能的。
+2） profile配置方式
+ 多profile文件方式：提供多个配置文件，每个代表一种环境。
+	• application-dev.properties/yml 开发环境
+	• application-test.properties/yml 测试环境
+	• application-pro.properties/yml 生产环境
+ yml多文档方式：
+	• 在yml中使用 --- 分隔不同配置
+3） profile激活方式
+ 配置文件： 再配置文件中配置：spring.profiles.active=dev
+ 虚拟机参数：在VM options 指定：-Dspring.profiles.active=dev
+ 命令行参数：java –jar xxx.jar --spring.profiles.active=dev
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><strong>内部配置加载顺序</strong>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Springboot程序启动时，会从以下位置加载配置文件：
+1. file:./config/：当前项目下的/config目录下
+2. file:./ ：当前项目的根目录
+3. classpath:/config/：classpath的/config目录
+4. classpath:/ ：classpath的根目录
+加载顺序为上文的排列顺序，高优先级配置的属性会生效
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>外部配置加载顺序</strong>：<a href="https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config" target="_blank" rel="noopener noreferrer">官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="整合其他框架"><a href="#整合其他框架" class="header-anchor">#</a> 整合其他框架</h2> <p><strong>SpringBoot整合Junit</strong>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>① 搭建SpringBoot工程
+② 引入starter-test起步依赖
+③ 编写测试类
+④ 添加测试相关注解
+• @RunWith(SpringRunner.class)
+• @SpringBootTest(classes = 启动类.class)
+⑤ 编写测试方法
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>SpringBoot整合Redis：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>① 搭建SpringBoot工程
+② 引入redis起步依赖
+③ 配置redis相关属性
+④ 注入RedisTemplate模板
+⑤ 编写测试方法，测试
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>SpringBoot整合MyBatis</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>① 搭建SpringBoot工程
+② 引入mybatis起步依赖，添加mysql驱动
+③ 编写DataSource和MyBatis相关配置
+④ 定义表和实体类
+⑤ 编写dao和mapper文件/纯注解开发
+⑥ 测试
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="原理分析"><a href="#原理分析" class="header-anchor">#</a> 原理分析</h2> <h3 id="自动配置"><a href="#自动配置" class="header-anchor">#</a> 自动配置</h3> <p><strong>Condition:</strong></p> <blockquote><p>Condition 是在Spring 4.0 增加的条件判断功能，通过这个可以功能可以实现选择性的创建 Bean 操作</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code> 自定义条件：
+① 定义条件类：自定义类实现Condition接口，重写 matches 方法，在 matches 方法中进行逻辑判断，返回
+boolean值 。 matches 方法两个参数：
+	• context：上下文对象，可以获取属性值，获取类加载器，获取BeanFactory等。
+	• metadata：元数据对象，用于获取注解属性。
+② 判断条件： 在初始化Bean时，使用 @Conditional(条件类.class)注解
+ 
+ SpringBoot 提供的常用条件注解：
+	• ConditionalOnProperty：判断配置文件中是否有对应属性和值才初始化Bean
+	• ConditionalOnClass：判断环境中是否有对应字节码文件才初始化Bean
+	• ConditionalOnMissingBean ： 判断环境中没有对应Bean才初始化Bean
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><strong>切换内置web服务器</strong></p> <blockquote><p>SpringBoot的web环境中默认使用tomcat作为内置服务器，其实SpringBoot提供了4中内置服务器供我们选择，我们可以很方便的进行切换。</p></blockquote> <p><strong>@Enable*注解</strong></p> <blockquote><p>SpringBoot中提供了很多Enable开头的注解，这些注解都是用于动态启用某些功能的。而其底层原理是使用@Import注解导入一些配置类，实现Bean的动态加载</p></blockquote> <p><strong>@Import注解</strong></p> <blockquote><p>@Enable*底层依赖于@Import注解导入一些类，使用@Import导入的类会被Spring加载到IOC容器中。而@Import提供4中用法：
+① 导入Bean
+② 导入配置类
+③ 导入 ImportSelector 实现类。一般用于加载配置文件中的类
+④ 导入 ImportBeanDefinitionRegistrar 实现类。</p></blockquote> <p><strong>@EnableAutoConfiguration 注解</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@EnableAutoConfiguration 注解内部使用 @Import(AutoConfigurationImportSelector.class)来加载配置类。
+配置文件位置：META-INF/spring.factories，该配置文件中定义了大量的配置类，当 SpringBoot 应用启动时，会自动加载   这些配置类，初始化Bean
+并不是所有的Bean都会被初始化，在配置类中使用Condition来加载满足条件的Bean
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="监听机制"><a href="#监听机制" class="header-anchor">#</a> 监听机制</h3> <blockquote><p>SpringBoot 的监听机制，其实是对Java提供的事件监听机制的封装。
+Java中的事件监听机制定义了以下几个角色：
+① 事件：Event，继承 java.util.EventObject 类的对象
+② 事件源：Source ，任意对象Object
+③ 监听器：Listener，实现 java.util.EventListener 接口 的对象</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>SpringBoot 在项目启动时，会对几个监听器进行回调，我们可以实现这些监听器接口，在项目启动时完成
+一些操作。
+ApplicationContextInitializer、SpringApplicationRunListener、CommandLineRunner、ApplicationRunner
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="启动流程"><a href="#启动流程" class="header-anchor">#</a> 启动流程</h3> <p><img src="D:%5Chuanjin%5C%E7%AC%94%E8%AE%B0%E5%8C%BA%5C%E5%8C%BA%E5%9F%9F%E4%BA%8C%5Csssm%5C%E7%AC%94%E8%AE%B0%5Cimg%5C20210828165153.png" alt=""></p> <h2 id="监控"><a href="#监控" class="header-anchor">#</a> 监控</h2> <blockquote><p>SpringBoot自带监控功能Actuator，可以帮助实现对程序内部运行情况监控，比如监控状况、Bean加载情况、配置属性、日志信息等。</p></blockquote> <p>使用：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>① 导入依赖坐标&lt;dependency&gt;&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&lt;artifactId&gt;spring-boot-starter-actuator&lt;/artifactId&gt;&lt;/dependency&gt;② 访问http://localhost:8080/acruator
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><table><thead><tr><th>路径</th> <th>描述</th></tr></thead> <tbody><tr><td>/beans</td> <td>描述应用程序上下文里全部的Bean，以及它们的关系</td></tr> <tr><td>/env</td> <td>获取全部环境属性</td></tr> <tr><td>/env/{name}</td> <td>根据名称获取特定的环境属性值</td></tr> <tr><td>/health</td> <td>报告应用程序的健康指标，这些值由HealthIndicator的实现类提供</td></tr> <tr><td>/info</td> <td>获取应用程序的定制信息，这些信息由info打头的属性提供</td></tr> <tr><td>/mappings</td> <td>描述全部的URI路径，以及它们和控制器(包含Actuator端点)的映射关系</td></tr> <tr><td>/metrics</td> <td>报告各种应用程序度量信息，比如内存用量和HTTP请求计数</td></tr> <tr><td>/metrics/{name}</td> <td>报告指定名称的应用程序度量值</td></tr> <tr><td>/trace</td> <td>提供基本的HTTP请求跟踪信息(时间戳、HTTP头等)</td></tr></tbody></table> <p><strong>Spring Boot Admin</strong>：</p> <p>⚫ Spring Boot Admin是一个开源社区项目，用于管理和监控SpringBoot应用程序。
+⚫ Spring Boot Admin 有两个角色，客户端(Client)和服务端(Server)。
+⚫ 应用程序作为Spring Boot Admin Client向为Spring Boot Admin Server注册
+⚫ Spring Boot Admin Server 的UI界面将Spring Boot Admin Client的Actuator Endpoint上的一些监控信息</p> <p>使用：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>admin-server：① 创建 admin-server 模块② 导入依赖坐标 admin-starter-server③ 在引导类上启用监控功能@EnableAdminServeradmin-client：① 创建 admin-client 模块② 导入依赖坐标 admin-starter-client③ 配置相关信息：server地址等④ 启动server和client服务，访问server
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="项目部署"><a href="#项目部署" class="header-anchor">#</a> 项目部署</h2> <blockquote><p>SpringBoot 项目开发完毕后，支持两种方式部署到服务器：
+① jar包(官方推荐)
+② war包</p></blockquote> <hr></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2021/8/28 下午8:38:27</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----></div></div>
+    <script src="/assets/js/app.7036e47e.js" defer></script><script src="/assets/js/4.ec8df83f.js" defer></script><script src="/assets/js/1.d2920358.js" defer></script><script src="/assets/js/2.245be42e.js" defer></script><script src="/assets/js/20.26398a86.js" defer></script><script src="/assets/js/12.44af248e.js" defer></script>
+  </body>
+</html>

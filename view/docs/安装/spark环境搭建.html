@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>spark环境搭建 | 须贺</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <script>
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?9146a86d484b79eb7a9fab54d0655aa0";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+          })();
+        </script>
+    <script language="javascript" type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/MouseClickEffect.js"></script>
+    <meta name="description" content="《鸟欲高飞先展翅，人求上进先读书》">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.c55ec633.css" as="style"><link rel="preload" href="/assets/js/app.7036e47e.js" as="script"><link rel="preload" href="/assets/js/4.ec8df83f.js" as="script"><link rel="preload" href="/assets/js/1.d2920358.js" as="script"><link rel="preload" href="/assets/js/2.245be42e.js" as="script"><link rel="preload" href="/assets/js/36.a6d81e30.js" as="script"><link rel="preload" href="/assets/js/12.44af248e.js" as="script"><link rel="prefetch" href="/assets/js/10.a2ab4732.js"><link rel="prefetch" href="/assets/js/11.cb2a446e.js"><link rel="prefetch" href="/assets/js/13.fe5d2510.js"><link rel="prefetch" href="/assets/js/14.a86b66a0.js"><link rel="prefetch" href="/assets/js/15.db93f4b6.js"><link rel="prefetch" href="/assets/js/16.315be0a7.js"><link rel="prefetch" href="/assets/js/17.bb33c2d3.js"><link rel="prefetch" href="/assets/js/18.aa3bc2d5.js"><link rel="prefetch" href="/assets/js/19.eb6674e0.js"><link rel="prefetch" href="/assets/js/20.26398a86.js"><link rel="prefetch" href="/assets/js/21.8573d310.js"><link rel="prefetch" href="/assets/js/22.f39eb1c6.js"><link rel="prefetch" href="/assets/js/23.70b63e87.js"><link rel="prefetch" href="/assets/js/24.780f4265.js"><link rel="prefetch" href="/assets/js/25.087b890e.js"><link rel="prefetch" href="/assets/js/26.a3432377.js"><link rel="prefetch" href="/assets/js/27.c82078d0.js"><link rel="prefetch" href="/assets/js/28.3f62dff1.js"><link rel="prefetch" href="/assets/js/29.c935e9bc.js"><link rel="prefetch" href="/assets/js/30.4acfb7de.js"><link rel="prefetch" href="/assets/js/31.3bd52897.js"><link rel="prefetch" href="/assets/js/32.cd6a4df7.js"><link rel="prefetch" href="/assets/js/33.4f206021.js"><link rel="prefetch" href="/assets/js/34.ad299da7.js"><link rel="prefetch" href="/assets/js/35.a74cd3c6.js"><link rel="prefetch" href="/assets/js/37.e3323ce2.js"><link rel="prefetch" href="/assets/js/38.18d7dd67.js"><link rel="prefetch" href="/assets/js/39.833f42ab.js"><link rel="prefetch" href="/assets/js/40.ed6400f3.js"><link rel="prefetch" href="/assets/js/41.81e6fc53.js"><link rel="prefetch" href="/assets/js/42.d0e39d51.js"><link rel="prefetch" href="/assets/js/43.047ac597.js"><link rel="prefetch" href="/assets/js/44.6e407d3e.js"><link rel="prefetch" href="/assets/js/45.234ad067.js"><link rel="prefetch" href="/assets/js/46.3eaaa14c.js"><link rel="prefetch" href="/assets/js/47.cd7ab522.js"><link rel="prefetch" href="/assets/js/48.d146214c.js"><link rel="prefetch" href="/assets/js/49.5412d8fd.js"><link rel="prefetch" href="/assets/js/5.83420c85.js"><link rel="prefetch" href="/assets/js/50.361271e2.js"><link rel="prefetch" href="/assets/js/51.2488c147.js"><link rel="prefetch" href="/assets/js/52.a5eb5e9f.js"><link rel="prefetch" href="/assets/js/53.c3859002.js"><link rel="prefetch" href="/assets/js/54.c572a44d.js"><link rel="prefetch" href="/assets/js/55.30248800.js"><link rel="prefetch" href="/assets/js/56.248288b0.js"><link rel="prefetch" href="/assets/js/57.3a11d1c7.js"><link rel="prefetch" href="/assets/js/58.95fa43c5.js"><link rel="prefetch" href="/assets/js/59.d002a857.js"><link rel="prefetch" href="/assets/js/6.5faf5a50.js"><link rel="prefetch" href="/assets/js/60.26b4ef39.js"><link rel="prefetch" href="/assets/js/61.7c152e5e.js"><link rel="prefetch" href="/assets/js/62.baeb52bb.js"><link rel="prefetch" href="/assets/js/63.8978958b.js"><link rel="prefetch" href="/assets/js/64.b14585b3.js"><link rel="prefetch" href="/assets/js/7.13c62f03.js"><link rel="prefetch" href="/assets/js/8.b2b362e0.js"><link rel="prefetch" href="/assets/js/9.0fd0389d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c55ec633.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-faf1ae92><div data-v-faf1ae92><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-faf1ae92 data-v-faf1ae92><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-5cb9a64e data-v-faf1ae92 data-v-faf1ae92><h3 class="title" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e>须贺</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><input type="password" value="" data-v-5cb9a64e> <span data-v-5cb9a64e>Konck! Knock!</span> <button data-v-5cb9a64e>OK</button></label> <div class="footer" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><span data-v-5cb9a64e><i class="iconfont reco-theme" data-v-5cb9a64e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-5cb9a64e>vuePress-theme-reco</a></span> <span data-v-5cb9a64e><i class="iconfont reco-copyright" data-v-5cb9a64e></i> <a data-v-5cb9a64e><span data-v-5cb9a64e>🎈</span>
+            
+          <span data-v-5cb9a64e>2021 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-faf1ae92><div data-v-faf1ae92><div id="smart" class="wrapper-page" style="background-image:url(/img/bjt3.jpg);background-position-x:center;background-position-y:center;background-size:cover;background-repeat-x:no-repeat;background-repeat-y:no-repeat;" data-v-faf1ae92><header class="navbar" data-v-faf1ae92><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/favicon.ico" alt="须贺" class="logo"> <span class="site-name">须贺</span></a> <div class="links"><div id="dayNightSwitch" class="generalWrapper" data-v-32f44868><a class="click" data-v-32f44868><div class="onOff daySwitch" data-v-32f44868><div class="star star1" data-v-32f44868></div> <div class="star star2" data-v-32f44868></div> <div class="star star3" data-v-32f44868></div> <div class="star star4" data-v-32f44868></div> <div class="star star5" data-v-32f44868></div> <div class="star sky" data-v-32f44868></div> <div class="sunMoon" data-v-32f44868><div class="crater crater1" data-v-32f44868></div> <div class="crater crater2" data-v-32f44868></div> <div class="crater crater3" data-v-32f44868></div> <div class="cloud part1" data-v-32f44868></div> <div class="cloud part2" data-v-32f44868></div></div></div></a></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="iconfont undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/categories/收藏/" class="nav-link"><i class="iconfont undefined"></i>
+  收藏
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/安装/" class="nav-link"><i class="iconfont undefined"></i>
+  安装
+</a></li><li class="dropdown-item"><!----> <a href="/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/踩坑/" class="nav-link"><i class="iconfont undefined"></i>
+  踩坑
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/view/reward/" class="nav-link"><i class="iconfont undefined"></i>
+  奖励
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-faf1ae92></div> <aside class="sidebar" data-v-faf1ae92><div class="personal-info-wrapper" data-v-03833281 data-v-faf1ae92><img src="/img/author.png" alt="author-avatar" class="personal-img" data-v-03833281> <h3 class="name" data-v-03833281>
+    🎈
+  </h3> <div class="num" data-v-03833281><div data-v-03833281><h3 data-v-03833281>43</h3> <h6 data-v-03833281>文章</h6></div> <div data-v-03833281><h3 data-v-03833281>32</h3> <h6 data-v-03833281>标签</h6></div></div> <hr data-v-03833281></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="iconfont undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/categories/收藏/" class="nav-link"><i class="iconfont undefined"></i>
+  收藏
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/安装/" class="nav-link"><i class="iconfont undefined"></i>
+  安装
+</a></li><li class="dropdown-item"><!----> <a href="/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/踩坑/" class="nav-link"><i class="iconfont undefined"></i>
+  踩坑
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/view/reward/" class="nav-link"><i class="iconfont undefined"></i>
+  奖励
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-5cb9a64e data-v-faf1ae92><h3 class="title" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e>spark环境搭建</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><input type="password" value="" data-v-5cb9a64e> <span data-v-5cb9a64e>Konck! Knock!</span> <button data-v-5cb9a64e>OK</button></label> <div class="footer" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><span data-v-5cb9a64e><i class="iconfont reco-theme" data-v-5cb9a64e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-5cb9a64e>vuePress-theme-reco</a></span> <span data-v-5cb9a64e><i class="iconfont reco-copyright" data-v-5cb9a64e></i> <a data-v-5cb9a64e><span data-v-5cb9a64e>🎈</span>
+            
+          <span data-v-5cb9a64e>2021 - </span>
+          2023
+        </a></span></div></div></div> <div data-v-faf1ae92><main class="page"><div class="page-title" style="display:none;"><h1 class="title">spark环境搭建</h1> <div class="page-info" data-v-0efa1f05><i class="iconfont reco-account" data-v-0efa1f05><span data-v-0efa1f05>🎈</span></i> <i class="iconfont reco-date" data-v-0efa1f05><span data-v-0efa1f05>2022-01-23</span></i> <i class="iconfont reco-eye" data-v-0efa1f05><span id="/view/docs/%E5%AE%89%E8%A3%85/spark%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-0efa1f05><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-0efa1f05><span class="tag-item" data-v-0efa1f05>安装</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="spark环境搭建"><a href="#spark环境搭建" class="header-anchor">#</a> spark环境搭建</h2> <h2 id="本地模式"><a href="#本地模式" class="header-anchor">#</a> 本地模式</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token number">1</span>. 上传解压安装包 改名
+<span class="token function">tar</span> -zxvf /opt/sortware/hadoop3/spark-3.0.0-bin-hadoop3.2.tgz -C /opt/module/
+<span class="token function">mv</span> /opt/module/spark-3.0.0-bin-hadoop3.2/ /opt/module/spark
+<span class="token number">2</span>. 直接启动
+/opt/module/spark/bin/spark-shell
+
+UI 访问端口 http://虚拟机地址:4040
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="yarn模式"><a href="#yarn模式" class="header-anchor">#</a> yarn模式</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token number">1</span>. 上传解压安装包 改名
+<span class="token function">tar</span> -zxvf /opt/sortware/hadoop3/spark-3.0.0-bin-hadoop3.2.tgz -C /opt/module/
+<span class="token function">mv</span> /opt/module/spark-3.0.0-bin-hadoop3.2/ /opt/module/spark
+
+<span class="token number">2</span>.修改hadoop中的yarn-site.xml配置文件 记得分发
+	<span class="token function">vim</span> /opt/module/hadoop/etc/hadoop/yarn-site.xml
+	
+	<span class="token comment">#xsync /opt/module/hadoop/etc/hadoop/yarn-site.xml  #分发</span>
+
+<span class="token number">3</span>.修改spark中的spark-env.sh  添加java环境变量 添加yarn的环境变量
+	 <span class="token function">mv</span> /opt/module/spark/conf/spark-env.sh.template /opt/module/spark/conf/spark-env.sh
+	 <span class="token function">vim</span> /opt/module/spark/conf/spark-env.sh 
+	 
+<span class="token number">4</span>. 启动hdfs 和yarn  创建日志存放目录
+	start-dfs.sh
+	start-yarn.sh
+	mr-jobhistory-daemon.sh start historyserver
+	
+	
+	hadoop fs -mkdir /yarn-spark-log
+
+<span class="token number">5</span>. 配置历史服务器 （如果是hdf是ha的话要指定对应 集群名称 否则找不到具体的namenode）
+<span class="token function">mv</span> /opt/module/spark/conf/spark-defaults.conf.template /opt/module/spark/conf/spark-defaults.conf
+<span class="token function">vim</span> /opt/module/spark/conf/spark-defaults.conf
+
+<span class="token number">5</span>. 修改日志级别
+<span class="token function">mv</span> /opt/module/spark/conf/log4j.properties.template /opt/module/spark/conf/log4j.properties
+vim/opt/module/spark/conf/log4j.properties
+<span class="token comment">#修改</span>
+log4j.rootCategory<span class="token operator">=</span>ERROR, console
+
+	
+<span class="token number">7</span>. 启动启动历史服务 
+	/opt/module/spark/sbin/start-history-server.sh
+	
+<span class="token number">8</span>. 验证 or 提交程序 （3选1）
+<span class="token number">1</span>. spark-shell --master <span class="token function">yarn</span>
+<span class="token number">2</span>. spark-shell --master <span class="token function">yarn</span> --deploy-mode client
+<span class="token number">3</span>. 
+bin/spark-submit <span class="token punctuation">\</span>
+--class org.apache.spark.examples.SparkPi <span class="token punctuation">\</span>
+--master <span class="token function">yarn</span> <span class="token punctuation">\</span>
+--deploy-mode cluster <span class="token punctuation">\</span>
+./examples/jars/spark-examples_2.12-3.0.0.jar <span class="token punctuation">\</span>
+<span class="token number">10</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br></div></div><ul><li><p>yarn-site.xml</p> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code><span class="token comment">&lt;!--是否启动一个线程检查每个任务正使用的物理内存量，如果任务超出分配值，则直接将其杀掉，默认是 true --&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+ 		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>yarn.nodemanager.pmem-check-enabled<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+		 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>false<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!--是否启动一个线程检查每个任务正使用的虚拟内存量，如果任务超出分配值，则直接将其杀掉，默认是 true --&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+		 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>yarn.nodemanager.vmem-check-enabled<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+ 			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>false<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></li> <li><p>spark-env.sh</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">export</span> <span class="token assign-left variable">JAVA_HOME</span><span class="token operator">=</span>/opt/module/jdk1.8.0_212
+	<span class="token assign-left variable">YARN_CONF_DIR</span><span class="token operator">=</span>/opt/module/hadoop/etc/hadoop
+
+<span class="token comment">#日志</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">SPARK_HISTORY_OPTS</span><span class="token operator">=</span><span class="token string">&quot;
+-Dspark.history.ui.port=18080 
+-Dspark.history.fs.logDirectory=hdfs://master:8020/directory 
+-Dspark.history.retainedApplications=30&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div></li> <li><p>spark-defaults</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>spark.eventLog.enabled <span class="token boolean">true</span>
+spark.eventLog.dir hdfs://master:8020/directory <span class="token comment">#目录需要提前创建</span>
+spark.yarn.historyServer.address<span class="token operator">=</span>master:18080
+spark.history.ui.port<span class="token operator">=</span><span class="token number">18080</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li></ul> <h2 id="ha模式"><a href="#ha模式" class="header-anchor">#</a> HA模式</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token number">1</span>. 停止集群
+<span class="token number">2</span>. 启动zk集群
+<span class="token number">3</span>. 修改 spark-env.sh 文件
+	<span class="token comment">#注释</span>
+	<span class="token comment">#SPARK_MASTER_HOST=master</span>
+	<span class="token comment">#SPARK_MASTER_PORT=7077</span>
+	添加如下内容:
+	<span class="token comment">#Master 监控页面默认访问端口为 8080，但是可能会和 Zookeeper 冲突，</span>
+	<span class="token comment">#所以改成 8989，也可以自定义，访问 UI 监控页面时请注意</span>
+	<span class="token assign-left variable">SPARK_MASTER_WEBUI_PORT</span><span class="token operator">=</span><span class="token number">8989</span>
+	<span class="token builtin class-name">export</span> <span class="token assign-left variable">SPARK_DAEMON_JAVA_OPTS</span><span class="token operator">=</span><span class="token string">&quot;
+	-Dspark.deploy.recoveryMode=ZOOKEEPER 
+	-Dspark.deploy.zookeeper.url=master,slave1,slave2
+	-Dspark.deploy.zookeeper.dir=/spark&quot;</span>
+<span class="token number">4</span>. 分发配置文件
+	xsync conf/
+<span class="token number">5</span>. 启动集群
+	sbin/start-all.sh
+<span class="token number">6</span>. 启动备用master <span class="token punctuation">(</span>部署master的机器上<span class="token punctuation">)</span>
+	sbin/start-master.sh
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="集群模式"><a href="#集群模式" class="header-anchor">#</a> 集群模式</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token number">1</span>. 解压文件到指定目录
+<span class="token number">2</span>. 修改节点配置文件
+	<span class="token builtin class-name">cd</span> conf
+	<span class="token function">mv</span> slaves.template slaves  <span class="token comment">#将模板文件修改成自己的</span>
+	<span class="token comment">#添加修改主机节点</span>
+    master
+    slave1
+    slave2
+    
+<span class="token number">3</span>. 修改执行配置文件
+	<span class="token function">mv</span> spark-env.sh.template spark-env.sh <span class="token comment">#将模板文件改名</span>
+	<span class="token comment">#添加 JAVA_HOME 环境变量和集群对应的 master 节点</span>
+	<span class="token builtin class-name">export</span> <span class="token assign-left variable">JAVA_HOME</span><span class="token operator">=</span>/opt/module/jdk1.8.0_144
+	<span class="token assign-left variable">SPARK_MASTER_HOST</span><span class="token operator">=</span>hadoop111
+	<span class="token assign-left variable">SPARK_MASTER_PORT</span><span class="token operator">=</span><span class="token number">7077</span> <span class="token comment">#内部通信端口类似8020</span>
+<span class="token number">4</span>. 分发修改好的压缩目录	
+	xsync spark-standalone
+<span class="token number">5</span>. 启动or关闭
+	/opt/module/spark/sbin/start-all.sh  <span class="token comment">#启动</span>
+UI访问端口：Web UI 界面: http://master:8080	
+
+<span class="token number">6</span>. 配置历史服务
+	<span class="token function">mv</span> spark-defaults.conf.template spark-defaults.conf 
+	<span class="token comment">#配置日志存储路径</span>
+	spark.eventLog.enabled <span class="token boolean">true</span> <span class="token comment">#开启</span>
+	spark.eventLog.dir hdfs://master:8020/directory <span class="token comment">#此目录需要在hdfs上提前创建</span>
+	<span class="token comment">#修改 spark-env.sh 文件, 添加日志配置</span>
+    <span class="token builtin class-name">export</span> <span class="token assign-left variable">SPARK_HISTORY_OPTS</span><span class="token operator">=</span><span class="token string">&quot;
+	-Dspark.history.ui.port=18080 #日志的WEB UI访问端口
+	-Dspark.history.fs.logDirectory=hdfs://master:8020/directory #存储路径
+	-Dspark.history.retainedApplications=30&quot;</span> <span class="token comment">#保存的历史个数</span>
+	<span class="token comment">#分发配置文件</span>
+	xsync conf
+	<span class="token comment">#重启集群和历史服务</span>
+	sbin/start-all.sh
+	sbin/start-history-server.sh
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2022/1/23 下午8:42:24</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----></div></div>
+    <script src="/assets/js/app.7036e47e.js" defer></script><script src="/assets/js/4.ec8df83f.js" defer></script><script src="/assets/js/1.d2920358.js" defer></script><script src="/assets/js/2.245be42e.js" defer></script><script src="/assets/js/36.a6d81e30.js" defer></script><script src="/assets/js/12.44af248e.js" defer></script>
+  </body>
+</html>

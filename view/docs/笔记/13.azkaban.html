@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>azkaban笔记 | 须贺</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <script>
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?9146a86d484b79eb7a9fab54d0655aa0";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+          })();
+        </script>
+    <script language="javascript" type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/MouseClickEffect.js"></script>
+    <meta name="description" content="《鸟欲高飞先展翅，人求上进先读书》">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.c55ec633.css" as="style"><link rel="preload" href="/assets/js/app.7036e47e.js" as="script"><link rel="preload" href="/assets/js/4.ec8df83f.js" as="script"><link rel="preload" href="/assets/js/1.d2920358.js" as="script"><link rel="preload" href="/assets/js/2.245be42e.js" as="script"><link rel="preload" href="/assets/js/46.3eaaa14c.js" as="script"><link rel="preload" href="/assets/js/12.44af248e.js" as="script"><link rel="prefetch" href="/assets/js/10.a2ab4732.js"><link rel="prefetch" href="/assets/js/11.cb2a446e.js"><link rel="prefetch" href="/assets/js/13.fe5d2510.js"><link rel="prefetch" href="/assets/js/14.a86b66a0.js"><link rel="prefetch" href="/assets/js/15.db93f4b6.js"><link rel="prefetch" href="/assets/js/16.315be0a7.js"><link rel="prefetch" href="/assets/js/17.bb33c2d3.js"><link rel="prefetch" href="/assets/js/18.aa3bc2d5.js"><link rel="prefetch" href="/assets/js/19.eb6674e0.js"><link rel="prefetch" href="/assets/js/20.26398a86.js"><link rel="prefetch" href="/assets/js/21.8573d310.js"><link rel="prefetch" href="/assets/js/22.f39eb1c6.js"><link rel="prefetch" href="/assets/js/23.70b63e87.js"><link rel="prefetch" href="/assets/js/24.780f4265.js"><link rel="prefetch" href="/assets/js/25.087b890e.js"><link rel="prefetch" href="/assets/js/26.a3432377.js"><link rel="prefetch" href="/assets/js/27.c82078d0.js"><link rel="prefetch" href="/assets/js/28.3f62dff1.js"><link rel="prefetch" href="/assets/js/29.c935e9bc.js"><link rel="prefetch" href="/assets/js/30.4acfb7de.js"><link rel="prefetch" href="/assets/js/31.3bd52897.js"><link rel="prefetch" href="/assets/js/32.cd6a4df7.js"><link rel="prefetch" href="/assets/js/33.4f206021.js"><link rel="prefetch" href="/assets/js/34.ad299da7.js"><link rel="prefetch" href="/assets/js/35.a74cd3c6.js"><link rel="prefetch" href="/assets/js/36.a6d81e30.js"><link rel="prefetch" href="/assets/js/37.e3323ce2.js"><link rel="prefetch" href="/assets/js/38.18d7dd67.js"><link rel="prefetch" href="/assets/js/39.833f42ab.js"><link rel="prefetch" href="/assets/js/40.ed6400f3.js"><link rel="prefetch" href="/assets/js/41.81e6fc53.js"><link rel="prefetch" href="/assets/js/42.d0e39d51.js"><link rel="prefetch" href="/assets/js/43.047ac597.js"><link rel="prefetch" href="/assets/js/44.6e407d3e.js"><link rel="prefetch" href="/assets/js/45.234ad067.js"><link rel="prefetch" href="/assets/js/47.cd7ab522.js"><link rel="prefetch" href="/assets/js/48.d146214c.js"><link rel="prefetch" href="/assets/js/49.5412d8fd.js"><link rel="prefetch" href="/assets/js/5.83420c85.js"><link rel="prefetch" href="/assets/js/50.361271e2.js"><link rel="prefetch" href="/assets/js/51.2488c147.js"><link rel="prefetch" href="/assets/js/52.a5eb5e9f.js"><link rel="prefetch" href="/assets/js/53.c3859002.js"><link rel="prefetch" href="/assets/js/54.c572a44d.js"><link rel="prefetch" href="/assets/js/55.30248800.js"><link rel="prefetch" href="/assets/js/56.248288b0.js"><link rel="prefetch" href="/assets/js/57.3a11d1c7.js"><link rel="prefetch" href="/assets/js/58.95fa43c5.js"><link rel="prefetch" href="/assets/js/59.d002a857.js"><link rel="prefetch" href="/assets/js/6.5faf5a50.js"><link rel="prefetch" href="/assets/js/60.26b4ef39.js"><link rel="prefetch" href="/assets/js/61.7c152e5e.js"><link rel="prefetch" href="/assets/js/62.baeb52bb.js"><link rel="prefetch" href="/assets/js/63.8978958b.js"><link rel="prefetch" href="/assets/js/64.b14585b3.js"><link rel="prefetch" href="/assets/js/7.13c62f03.js"><link rel="prefetch" href="/assets/js/8.b2b362e0.js"><link rel="prefetch" href="/assets/js/9.0fd0389d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c55ec633.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-faf1ae92><div data-v-faf1ae92><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-faf1ae92 data-v-faf1ae92><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-5cb9a64e data-v-faf1ae92 data-v-faf1ae92><h3 class="title" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e>须贺</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><input type="password" value="" data-v-5cb9a64e> <span data-v-5cb9a64e>Konck! Knock!</span> <button data-v-5cb9a64e>OK</button></label> <div class="footer" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><span data-v-5cb9a64e><i class="iconfont reco-theme" data-v-5cb9a64e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-5cb9a64e>vuePress-theme-reco</a></span> <span data-v-5cb9a64e><i class="iconfont reco-copyright" data-v-5cb9a64e></i> <a data-v-5cb9a64e><span data-v-5cb9a64e>🎈</span>
+            
+          <span data-v-5cb9a64e>2021 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-faf1ae92><div data-v-faf1ae92><div id="smart" class="wrapper-page" style="background-image:url(/img/bjt3.jpg);background-position-x:center;background-position-y:center;background-size:cover;background-repeat-x:no-repeat;background-repeat-y:no-repeat;" data-v-faf1ae92><header class="navbar" data-v-faf1ae92><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/favicon.ico" alt="须贺" class="logo"> <span class="site-name">须贺</span></a> <div class="links"><div id="dayNightSwitch" class="generalWrapper" data-v-32f44868><a class="click" data-v-32f44868><div class="onOff daySwitch" data-v-32f44868><div class="star star1" data-v-32f44868></div> <div class="star star2" data-v-32f44868></div> <div class="star star3" data-v-32f44868></div> <div class="star star4" data-v-32f44868></div> <div class="star star5" data-v-32f44868></div> <div class="star sky" data-v-32f44868></div> <div class="sunMoon" data-v-32f44868><div class="crater crater1" data-v-32f44868></div> <div class="crater crater2" data-v-32f44868></div> <div class="crater crater3" data-v-32f44868></div> <div class="cloud part1" data-v-32f44868></div> <div class="cloud part2" data-v-32f44868></div></div></div></a></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="iconfont undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/categories/收藏/" class="nav-link"><i class="iconfont undefined"></i>
+  收藏
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/安装/" class="nav-link"><i class="iconfont undefined"></i>
+  安装
+</a></li><li class="dropdown-item"><!----> <a href="/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/踩坑/" class="nav-link"><i class="iconfont undefined"></i>
+  踩坑
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/view/reward/" class="nav-link"><i class="iconfont undefined"></i>
+  奖励
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-faf1ae92></div> <aside class="sidebar" data-v-faf1ae92><div class="personal-info-wrapper" data-v-03833281 data-v-faf1ae92><img src="/img/author.png" alt="author-avatar" class="personal-img" data-v-03833281> <h3 class="name" data-v-03833281>
+    🎈
+  </h3> <div class="num" data-v-03833281><div data-v-03833281><h3 data-v-03833281>43</h3> <h6 data-v-03833281>文章</h6></div> <div data-v-03833281><h3 data-v-03833281>32</h3> <h6 data-v-03833281>标签</h6></div></div> <hr data-v-03833281></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="iconfont undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/categories/收藏/" class="nav-link"><i class="iconfont undefined"></i>
+  收藏
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/安装/" class="nav-link"><i class="iconfont undefined"></i>
+  安装
+</a></li><li class="dropdown-item"><!----> <a href="/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/踩坑/" class="nav-link"><i class="iconfont undefined"></i>
+  踩坑
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/view/reward/" class="nav-link"><i class="iconfont undefined"></i>
+  奖励
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-5cb9a64e data-v-faf1ae92><h3 class="title" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e>azkaban笔记</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><input type="password" value="" data-v-5cb9a64e> <span data-v-5cb9a64e>Konck! Knock!</span> <button data-v-5cb9a64e>OK</button></label> <div class="footer" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><span data-v-5cb9a64e><i class="iconfont reco-theme" data-v-5cb9a64e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-5cb9a64e>vuePress-theme-reco</a></span> <span data-v-5cb9a64e><i class="iconfont reco-copyright" data-v-5cb9a64e></i> <a data-v-5cb9a64e><span data-v-5cb9a64e>🎈</span>
+            
+          <span data-v-5cb9a64e>2021 - </span>
+          2023
+        </a></span></div></div></div> <div data-v-faf1ae92><main class="page"><div class="page-title" style="display:none;"><h1 class="title">azkaban笔记</h1> <div class="page-info" data-v-0efa1f05><i class="iconfont reco-account" data-v-0efa1f05><span data-v-0efa1f05>🎈</span></i> <i class="iconfont reco-date" data-v-0efa1f05><span data-v-0efa1f05>2021-09-17</span></i> <i class="iconfont reco-eye" data-v-0efa1f05><span id="/view/docs/%E7%AC%94%E8%AE%B0/13.azkaban.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-0efa1f05><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-0efa1f05><span class="tag-item" data-v-0efa1f05>azkaban</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="azkaban"><a href="#azkaban" class="header-anchor">#</a> azkaban</h2> <p>官网<a href="https://azkaban.github.io/" target="_blank" rel="noopener noreferrer">https://azkaban.github.io/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>用作调度hadoop的工作流程</p> <p>常见工作流调度系统：Crontab(简单任务)、Ooize、azkaban、airflow、dolphinscheduler等</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>oozie：oozie使用xml配置,在cdh中也可以使用hue组件进行可视化操作
+azkaban：yaml配置
+airflow：python脚本
+dolphinscheduler:可视化
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>使用步骤：描述工作流程、配置定时规则</p> <p><strong>Oozie和azkaban对比</strong>：</p> <p>oozie是一个重量级任务调度系统、功能全面、配置复杂</p> <p>azkaban是一个轻量级调度器</p> <h2 id="部署"><a href="#部署" class="header-anchor">#</a> 部署</h2> <p><strong>架构</strong>:web server(调度、用户、权限管理等)+Executor server(具体任务执行)+mysql(定时规则、任务状态等)</p> <p><strong>部署</strong>：单机、集群</p> <p>集群规划</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>hadoop111  hadoop112   hadoop113
+  web       Executor    Executor 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>步骤</strong>：</p> <ul><li><p>上传解压安装包</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>azkaban-db-3.84.4.tar.gz   <span class="token comment">#mysql建表语句</span>
+azkaban-exec-server-3.84.4.tar.gz  <span class="token comment">#Executor 服务</span>
+azkaban-web-server-3.84.4.tar.gz  <span class="token comment">#web 服务</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>改名(可选)</p></li> <li><p>配置mysql</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#登录msql</span>
+<span class="token comment">#创建数据库 </span>
+ create database azkaban<span class="token punctuation">;</span>
+<span class="token comment">#创建 azkaban 用户并赋予权限  设置密码有效长度 4 位及以上(方便操作 可选)</span>
+ <span class="token builtin class-name">set</span> global <span class="token assign-left variable">validate_password_length</span><span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">;</span>
+<span class="token comment">#设置密码策略最低级别(方便操作 可选)</span>
+ <span class="token builtin class-name">set</span> global <span class="token assign-left variable">validate_password_policy</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token comment"># 任何主机都可以访问 Azkaban，密码是 000000</span>
+ CREATE <span class="token environment constant">USER</span> <span class="token string">'azkaban'</span>@<span class="token string">'%'</span> IDENTIFIED BY <span class="token string">'000000'</span><span class="token punctuation">;</span>
+<span class="token comment"># 赋予 Azkaban 用户增删改查权限</span>
+ GRANT SELECT,INSERT,UPDATE,DELETE ON azkaban.* to 
+<span class="token string">'azkaban'</span>@<span class="token string">'%'</span> WITH GRANT OPTION<span class="token punctuation">;</span>
+<span class="token comment"># 创建 Azkaban 表，完成后退出 MySQL</span>
+ use azkaban<span class="token punctuation">;</span>
+ <span class="token builtin class-name">source</span> /opt/module/azkaban/azkaban-db-3.84.4/create-allsql-3.84.4.sql
+<span class="token comment"># 更改 MySQL 包大小；防止 Azkaban 连接 MySQL 阻塞</span>
+  <span class="token function">sudo</span> <span class="token function">vim</span> /etc/my.cnf
+<span class="token comment"># 在[mysqld]下面加一行 max_allowed_packet=1024M</span>
+  <span class="token punctuation">[</span>mysqld<span class="token punctuation">]</span>
+  <span class="token assign-left variable">max_allowed_packet</span><span class="token operator">=</span>1024M
+<span class="token comment">#重启 MySQL</span>
+  <span class="token function">sudo</span> systemctl restart mysqld
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div></li> <li><p>配置exec</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># azkaban.properties</span>
+<span class="token function">vim</span> /opt/module/azkaban/azkaban-exec/conf/azkaban.properties
+<span class="token comment">#配置</span>
+default.timezone.id<span class="token operator">=</span>Asia/Shanghai
+azkaban.webserver.url<span class="token operator">=</span>http://hadoop111:8081
+executor.port<span class="token operator">=</span><span class="token number">12321</span> <span class="token comment">#需要添加</span>
+mysql.host<span class="token operator">=</span>hadoop111
+mysql.password<span class="token operator">=</span>000000
+
+<span class="token comment">#同步分发节点</span>
+xsync /opt/module/azkaban/azkaban-exce/
+<span class="token comment">#启动 进入到/opt/module/azkaban/azkaban-exec 路径 (因为配置文件是相对路径)</span>
+bin/start-exec.sh <span class="token comment">#三台</span>
+<span class="token comment">#激活 executor 分别在三台集群上 #发送get请求</span>
+<span class="token function">curl</span> -G <span class="token string">&quot;hadoop111:12321/executor?action=activate&quot;</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span>
+<span class="token function">curl</span> -G <span class="token string">&quot;hadoop112:12321/executor?action=activate&quot;</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span>
+<span class="token function">curl</span> -G <span class="token string">&quot;hadoop113:12321/executor?action=activate&quot;</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span>
+<span class="token comment"># {&quot;status&quot;:&quot;success&quot;} 标识激活成功</span>
+<span class="token comment">#停止</span>
+bin/shutdown-exec.sh 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><blockquote><p>在executors表中可以查看主机连接信息</p></blockquote></li> <li><p>配置web</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 在hadoop111编辑 azkaban.properties</span>
+<span class="token comment">#修改</span>
+default.timezone.id<span class="token operator">=</span>Asia/Shanghai
+mysql.host<span class="token operator">=</span>hadoop111
+mysql.password<span class="token operator">=</span>000000
+azkaban.executorselector.filters<span class="token operator">=</span>StaticRemainingFlowSize,CpuStatus
+<span class="token comment">#StaticRemainingFlowSize：正在排队的任务数</span>
+<span class="token comment">#CpuStatus：CPU 占用情况</span>
+<span class="token comment">##MinimumFreeMemory：内存占用情况。测试环境，必须将 MinimumFreeMemory 删除掉，否则它会认为集群资源不够，不执行。</span>
+<span class="token comment">#修改 azkaban-users.xml 文件 #添加hadoop101用户</span>
+<span class="token function">vim</span> /opt/module/azkaban/azkaban-web/conf/azkaban-users.xml
+<span class="token operator">&lt;</span>azkaban-users<span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span>user <span class="token assign-left variable">groups</span><span class="token operator">=</span><span class="token string">&quot;azkaban&quot;</span> <span class="token assign-left variable">password</span><span class="token operator">=</span><span class="token string">&quot;azkaban&quot;</span> <span class="token assign-left variable">roles</span><span class="token operator">=</span><span class="token string">&quot;admin&quot;</span> 
+<span class="token assign-left variable">username</span><span class="token operator">=</span><span class="token string">&quot;azkaban&quot;</span>/<span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span>user <span class="token assign-left variable">password</span><span class="token operator">=</span><span class="token string">&quot;metrics&quot;</span> <span class="token assign-left variable">roles</span><span class="token operator">=</span><span class="token string">&quot;metrics&quot;</span> <span class="token assign-left variable">username</span><span class="token operator">=</span><span class="token string">&quot;metrics&quot;</span>/<span class="token operator">&gt;</span>
+ <span class="token comment">#添加用户</span>
+ <span class="token operator">&lt;</span>user <span class="token assign-left variable">password</span><span class="token operator">=</span><span class="token string">&quot;hadoop101&quot;</span> <span class="token assign-left variable">roles</span><span class="token operator">=</span><span class="token string">&quot;admin&quot;</span> <span class="token assign-left variable">username</span><span class="token operator">=</span><span class="token string">&quot;hadoop101&quot;</span>/<span class="token operator">&gt;</span>
+ <span class="token comment">#admin的权限</span>
+ <span class="token operator">&lt;</span>role <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;admin&quot;</span> <span class="token assign-left variable">permissions</span><span class="token operator">=</span><span class="token string">&quot;ADMIN&quot;</span>/<span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span>role <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;metrics&quot;</span> <span class="token assign-left variable">permissions</span><span class="token operator">=</span><span class="token string">&quot;METRICS&quot;</span>/<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/azkaban-users<span class="token operator">&gt;</span>
+<span class="token comment"># 启动 web server  也是要进入这个路径</span>
+bin/start-web.sh <span class="token comment">#启动</span>
+<span class="token comment"># http://hadoop111:8081 登录即可</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div></li></ul> <blockquote><p>启动时要注意 要在 web server路径下不能多也不能少</p></blockquote> <p><strong>群启群关脚本</strong></p> <blockquote><div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 补充到的脚本知识</span>
+<span class="token function">ssh</span> 主机 <span class="token string">&quot;cd /home ; ls&quot;</span>
+<span class="token number">1</span>. 双引号，必须有。如果不加双引号，第二个ls命令在本地执行
+<span class="token number">2</span>. 分号，两个命令之间用分号隔开
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></blockquote> <p>具体: 俩个脚本</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token shebang important">#!/bin/bash</span>
+<span class="token comment"># 启动exec集群脚本 里面设置了web关闭 没有设置web开启因为web开启之前需要激活</span>
+<span class="token keyword">case</span> <span class="token variable">$1</span> <span class="token keyword">in</span>
+<span class="token string">&quot;start&quot;</span><span class="token punctuation">)</span>
+		<span class="token keyword">for</span> <span class="token for-or-select variable">host</span> <span class="token keyword">in</span> hadoop111 hadoop112 hadoop113<span class="token punctuation">;</span>
+		<span class="token keyword">do</span>
+			<span class="token builtin class-name">echo</span> <span class="token string">&quot;-------<span class="token variable">$host</span> start azkaban-------&quot;</span>
+			<span class="token function">ssh</span> <span class="token variable">$host</span> <span class="token string">&quot;cd /opt/module/azkaban/azkaban-exce ; bin/start-exec.sh&quot;</span>		
+		<span class="token keyword">done</span>
+		<span class="token comment"># </span>
+		<span class="token comment">#ssh hadoop111 &quot;/home/hadoop101/bin/azkabweb.sh ; cd /opt/module/azkaban/azkaban-web ; bin/start-web.sh&quot;</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token string">&quot;stop&quot;</span><span class="token punctuation">)</span>
+		<span class="token function">ssh</span> hadoop111 <span class="token string">&quot;cd /opt/module/azkaban/azkaban-web ; bin/shutdown-web.sh&quot;</span>
+		<span class="token keyword">for</span> <span class="token for-or-select variable">host</span> <span class="token keyword">in</span> hadoop111 hadoop112 hadoop113<span class="token punctuation">;</span>
+		<span class="token keyword">do</span>
+			<span class="token builtin class-name">echo</span> <span class="token string">&quot;-------<span class="token variable">$host</span> stop azkaban-------&quot;</span>
+			<span class="token function">ssh</span> <span class="token variable">$host</span> <span class="token string">&quot;cd /opt/module/azkaban/azkaban-exce ; bin/shutdown-exec.sh&quot;</span>
+		<span class="token keyword">done</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token keyword">esac</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token shebang important">#!/bin/bash</span>
+<span class="token comment"># 配置激活脚本 并且配置主动开启web   和关闭</span>
+<span class="token keyword">case</span> <span class="token variable">$1</span> <span class="token keyword">in</span>
+<span class="token string">&quot;start&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> <span class="token for-or-select variable">host</span> <span class="token keyword">in</span> hadoop111 hadoop112 hadoop113<span class="token punctuation">;</span>
+<span class="token keyword">do</span>
+		 <span class="token function">curl</span> -G <span class="token string">&quot;<span class="token variable">$host</span>:12321/executor?action=activate&quot;</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span>
+<span class="token keyword">done</span>
+		<span class="token function">ssh</span> hadoop111 <span class="token string">&quot;/home/hadoop101/bin/azkabweb.sh ; cd /opt/module/azkaban/azkaban-web ; bin/start-web.sh&quot;</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token string">&quot;stop&quot;</span><span class="token punctuation">)</span>
+		<span class="token function">ssh</span> hadoop111 <span class="token string">&quot;cd /opt/module/azkaban/azkaban-web ; bin/shutdown-web.sh&quot;</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token keyword">esac</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="基本使用"><a href="#基本使用" class="header-anchor">#</a> 基本使用</h2> <p>编写俩个文件打成应该zip包上传到kzkaban(这个就是工作流程的描述文件)</p> <p>蓝色正在执行,绿色执行成功，红色失败</p> <p>joblist查看具体的工作单元执行日志</p> <p>flowlog工作流程的日志</p> <p>配置文件：p'roject文件和flow(描述)文件</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#project文件</span>
+<span class="token comment">#作用是指定描述文件格式的版本 1.0是project格式 2.0是yaml格式</span>
+azkaban-flow-version: <span class="token number">2.0</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token comment">#描述flow</span>
+<span class="token key atrule">nodes</span><span class="token punctuation">:</span>
+ <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> jobA
+ <span class="token key atrule">type</span><span class="token punctuation">:</span> command  <span class="token comment">#类型任务</span>
+ <span class="token key atrule">config</span><span class="token punctuation">:</span>
+  <span class="token key atrule">command</span><span class="token punctuation">:</span> echo &quot;Hello World&quot; <span class="token comment">#就是这个类型任务</span>
+<span class="token comment">#command是需要执行的shell命令 可以是脚本等</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>yaml<strong>语法补充</strong>:号码后面有空格注意缩进用空格补</p> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token comment">#kv键值对</span>
+<span class="token key atrule">name</span><span class="token punctuation">:</span> 值
+<span class="token key atrule">age</span><span class="token punctuation">:</span> 值
+<span class="token punctuation">{</span><span class="token key atrule">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;值&quot;</span><span class="token punctuation">,</span><span class="token key atrule">&quot;age&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;值&quot;</span><span class="token punctuation">}</span>
+<span class="token comment"># 数组</span>
+<span class="token punctuation">-</span> a
+<span class="token punctuation">-</span> b
+<span class="token punctuation">[</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">]</span>
+<span class="token comment">#对象数组 </span>
+<span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> zhangsan
+  <span class="token key atrule">age</span><span class="token punctuation">:</span> <span class="token number">10</span>
+<span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> lisi
+  <span class="token key atrule">age</span><span class="token punctuation">:</span> <span class="token number">20</span>
+<span class="token punctuation">[</span> <span class="token punctuation">{</span><span class="token key atrule">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;zhangsan&quot;</span><span class="token punctuation">,</span><span class="token key atrule">&quot;age&quot;</span><span class="token punctuation">:</span> <span class="token number">10</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span><span class="token key atrule">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;lisi&quot;</span><span class="token punctuation">,</span><span class="token key atrule">&quot;age&quot;</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">}</span> <span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><strong>作业依赖案例</strong>：</p> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">dependsOn</span><span class="token punctuation">:</span> <span class="token comment">#依赖于下面俩个 所以下面俩个执行完再执行这个</span>
+    <span class="token punctuation">-</span> 任务1
+    <span class="token punctuation">-</span> 任务2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>失败重试</strong>:</p> <ul><li>**自动 **:暂时性(每隔100秒)</li> <li><strong>手动</strong>:  出现了问题(需要修复,再定位之前位置再跑)</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 自动</span>
+reiries: 重试次数
+reiry.backoff: 重试时间间隔
+<span class="token comment">#手动 </span>
+在页面操作
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>任务类型</strong>：type</p> <ul><li><p>command 执行一条shell命令</p></li> <li><p>javaprocess   java进程</p> <blockquote><p>Xms:最小堆，Xmx:最大堆,classpath:类路径，javaclass:要运行的jaba对象有maim方法</p> <p>main.args: main方法参数</p></blockquote></li> <li><p>步骤：</p> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code>1.MAVEN工程
+2.创建应该类（里面一定要有main方法）
+3.编写逻辑
+4.打包
+6.编写工作流程配置文件
+	<span class="token key atrule">type</span><span class="token punctuation">:</span> javaprocess  
+    <span class="token key atrule">config</span><span class="token punctuation">:</span>
+      <span class="token key atrule">Xms</span><span class="token punctuation">:</span> 96M
+      <span class="token key atrule">Xmx</span><span class="token punctuation">:</span> 200M
+      <span class="token key atrule">java.class</span><span class="token punctuation">:</span> com.axcmsm.Test
+ <span class="token comment">#没有配置classpath默认是以当前文件目录（因为jar包和配置文件打成zip包在一起了）</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></li></ul> <h3 id="条件工作流"><a href="#条件工作流" class="header-anchor">#</a> 条件工作流</h3> <p>按照自定义条件执行job任务</p> <p>条件构成：</p> <ul><li>(多个)父任务运行结束输出的参数</li> <li>使用预定义宏(使用它提前预定的内置规则)</li></ul> <p><strong>基本原理</strong>:</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>（1）父 Job 将参数写入 JOB_OUTPUT_PROP_FILE 环境变量所指向的文件 json字符串 
+（2）子 Job 使用 <span class="token variable">${jobName<span class="token operator">:</span>param}</span>来获取父 Job 输出的参数并定义执行条件
+
+再使用条件运算符进行必对执行.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>步骤：</p> <ul><li><p>编写父任务脚本   <code>json字符串k,v &gt; $JOB_OUTPUT_PROP_FILE</code></p></li> <li><p>子任务脚本</p></li> <li><p>配置文件</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#子任务添加</span>
+condition: <span class="token variable">${父任务名称<span class="token operator">:</span>在文件中的key}</span> <span class="token operator">==</span> 值   
+ <span class="token comment">#这里是去JOB_OUTPUT_PROP_FILE根号key拿到value 在进行条件判断 </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>打成一个zip 上传即可</p></li></ul> <p><strong>预定义宏</strong>：根据所有父job的完成情况进行判断</p> <p>参数：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token number">1</span>.all_success: 标识父job全部成功才可以
+<span class="token number">2</span>.all_done: 表示父job全部完成才执行
+<span class="token number">3</span>.all_failed: 表示父job全部失败才执行
+<span class="token number">4</span>.one_success: 表示job至少一个成功才执行
+<span class="token number">5</span>.one_failed: 表示父job至少一个失败才执行
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>配置：在需要条件判断的任务添加 <code>condition: 上面的条件</code>  即可</p> <p><strong>定时执行</strong>：⭕</p> <p>在页面配置,点击schedule配置即可(里面有解释)</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>*	任何值
+,	值列表分隔符
+——	值范围
+/	步长值
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="邮件工作流"><a href="#邮件工作流" class="header-anchor">#</a> 邮件工作流</h3> <p><strong>注册邮箱</strong>：(作为发件人)   126邮箱&gt;账号管理 或者qq邮箱  点击设置账号开启<strong>SMTP协议</strong></p> <p><strong>配置服务配置文件</strong>：配置发件人</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token number">1</span>.在web节点上,编辑/opt/module/azkaban/azkaban-web/conf/azkaban.properties 文件
+<span class="token comment">#这里设置邮件发送服务器，需要 申请邮箱，切开通 stmp 服务，以下只是例子</span>
+mail.sender<span class="token operator">=</span>atguigu@126.com
+<span class="token comment">#可以搜索host的服务器 qq的是smtp.qq.com</span>
+mail.host<span class="token operator">=</span>smtp.126.com
+mail.user<span class="token operator">=</span>atguigu@126.com
+mail.password<span class="token operator">=</span>用邮箱的授权码
+<span class="token number">2</span>.保存并重启 web-server。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><strong>配置web服务</strong>：配置收件人</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>打开azkabanweb:8081页面进行配置
+如果英文不好可以借助页面的翻译插件进行翻译操作即可
+有失败发生和成功发生。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="电话服务报警"><a href="#电话服务报警" class="header-anchor">#</a> 电话服务报警</h3> <p><strong>第三方告警平台集成</strong>：睿象云等...</p> <p>官网地址：<a href="https://www.aiops.com/" target="_blank" rel="noopener noreferrer">https://www.aiops.com/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 先注册登录</p> <p><strong>集成azkaban</strong>：点击CA&gt;点击集成&gt;email</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>通用集成:
+ - ResIAPI 往提供的接口发送请求即可触发警报规则
+ - Email  发送提供的邮箱地址即可触发警报规则 (推荐 因为azkaban原生支持邮箱发送)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>配置睿象云</strong>：点击CA&gt;配置&gt;通知策略&gt;新建通知</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>配置好需要的实现的功能即可
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>最后再使用原生邮箱发送发送到他提供的地址即可促发</strong></p> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>在配置conf/azkaban.properties时里面配置的发送人是qq邮箱</p> <p>会被睿象云的邮箱屏蔽掉,最好使用126、136等邮箱作为发送邮箱</p></div> <h2 id="注意事项"><a href="#注意事项" class="header-anchor">#</a> 注意事项</h2> <p>在集群模式下,多台exec执行任务时,是webserver选择其中一个exec去执行。(大概率执行失败)</p> <p>因为你执行的脚本不在同一个exec节点下。</p> <p>解决方案：</p> <ul><li><p>指定特定exec去执行 （id不固定,负载均衡失效...）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>在mysql的`azkaban数据库的executors表中,查询hadoop111的exec的id
+在web页面执行工作流程时添加useExecutor的属性 把id放里面
+#id每次启动又概率会发送改变
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>所有的exec节点都添加该脚本 (<strong>推荐</strong>)</p></li></ul></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2021/9/21 下午11:14:17</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----></div></div>
+    <script src="/assets/js/app.7036e47e.js" defer></script><script src="/assets/js/4.ec8df83f.js" defer></script><script src="/assets/js/1.d2920358.js" defer></script><script src="/assets/js/2.245be42e.js" defer></script><script src="/assets/js/46.3eaaa14c.js" defer></script><script src="/assets/js/12.44af248e.js" defer></script>
+  </body>
+</html>

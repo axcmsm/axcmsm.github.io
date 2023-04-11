@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>kafka笔记 | 须贺</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <script>
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?9146a86d484b79eb7a9fab54d0655aa0";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+          })();
+        </script>
+    <script language="javascript" type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/MouseClickEffect.js"></script>
+    <meta name="description" content="《鸟欲高飞先展翅，人求上进先读书》">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.c55ec633.css" as="style"><link rel="preload" href="/assets/js/app.7036e47e.js" as="script"><link rel="preload" href="/assets/js/4.ec8df83f.js" as="script"><link rel="preload" href="/assets/js/1.d2920358.js" as="script"><link rel="preload" href="/assets/js/2.245be42e.js" as="script"><link rel="preload" href="/assets/js/43.047ac597.js" as="script"><link rel="preload" href="/assets/js/12.44af248e.js" as="script"><link rel="prefetch" href="/assets/js/10.a2ab4732.js"><link rel="prefetch" href="/assets/js/11.cb2a446e.js"><link rel="prefetch" href="/assets/js/13.fe5d2510.js"><link rel="prefetch" href="/assets/js/14.a86b66a0.js"><link rel="prefetch" href="/assets/js/15.db93f4b6.js"><link rel="prefetch" href="/assets/js/16.315be0a7.js"><link rel="prefetch" href="/assets/js/17.bb33c2d3.js"><link rel="prefetch" href="/assets/js/18.aa3bc2d5.js"><link rel="prefetch" href="/assets/js/19.eb6674e0.js"><link rel="prefetch" href="/assets/js/20.26398a86.js"><link rel="prefetch" href="/assets/js/21.8573d310.js"><link rel="prefetch" href="/assets/js/22.f39eb1c6.js"><link rel="prefetch" href="/assets/js/23.70b63e87.js"><link rel="prefetch" href="/assets/js/24.780f4265.js"><link rel="prefetch" href="/assets/js/25.087b890e.js"><link rel="prefetch" href="/assets/js/26.a3432377.js"><link rel="prefetch" href="/assets/js/27.c82078d0.js"><link rel="prefetch" href="/assets/js/28.3f62dff1.js"><link rel="prefetch" href="/assets/js/29.c935e9bc.js"><link rel="prefetch" href="/assets/js/30.4acfb7de.js"><link rel="prefetch" href="/assets/js/31.3bd52897.js"><link rel="prefetch" href="/assets/js/32.cd6a4df7.js"><link rel="prefetch" href="/assets/js/33.4f206021.js"><link rel="prefetch" href="/assets/js/34.ad299da7.js"><link rel="prefetch" href="/assets/js/35.a74cd3c6.js"><link rel="prefetch" href="/assets/js/36.a6d81e30.js"><link rel="prefetch" href="/assets/js/37.e3323ce2.js"><link rel="prefetch" href="/assets/js/38.18d7dd67.js"><link rel="prefetch" href="/assets/js/39.833f42ab.js"><link rel="prefetch" href="/assets/js/40.ed6400f3.js"><link rel="prefetch" href="/assets/js/41.81e6fc53.js"><link rel="prefetch" href="/assets/js/42.d0e39d51.js"><link rel="prefetch" href="/assets/js/44.6e407d3e.js"><link rel="prefetch" href="/assets/js/45.234ad067.js"><link rel="prefetch" href="/assets/js/46.3eaaa14c.js"><link rel="prefetch" href="/assets/js/47.cd7ab522.js"><link rel="prefetch" href="/assets/js/48.d146214c.js"><link rel="prefetch" href="/assets/js/49.5412d8fd.js"><link rel="prefetch" href="/assets/js/5.83420c85.js"><link rel="prefetch" href="/assets/js/50.361271e2.js"><link rel="prefetch" href="/assets/js/51.2488c147.js"><link rel="prefetch" href="/assets/js/52.a5eb5e9f.js"><link rel="prefetch" href="/assets/js/53.c3859002.js"><link rel="prefetch" href="/assets/js/54.c572a44d.js"><link rel="prefetch" href="/assets/js/55.30248800.js"><link rel="prefetch" href="/assets/js/56.248288b0.js"><link rel="prefetch" href="/assets/js/57.3a11d1c7.js"><link rel="prefetch" href="/assets/js/58.95fa43c5.js"><link rel="prefetch" href="/assets/js/59.d002a857.js"><link rel="prefetch" href="/assets/js/6.5faf5a50.js"><link rel="prefetch" href="/assets/js/60.26b4ef39.js"><link rel="prefetch" href="/assets/js/61.7c152e5e.js"><link rel="prefetch" href="/assets/js/62.baeb52bb.js"><link rel="prefetch" href="/assets/js/63.8978958b.js"><link rel="prefetch" href="/assets/js/64.b14585b3.js"><link rel="prefetch" href="/assets/js/7.13c62f03.js"><link rel="prefetch" href="/assets/js/8.b2b362e0.js"><link rel="prefetch" href="/assets/js/9.0fd0389d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c55ec633.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-faf1ae92><div data-v-faf1ae92><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-faf1ae92 data-v-faf1ae92><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-5cb9a64e data-v-faf1ae92 data-v-faf1ae92><h3 class="title" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e>须贺</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><input type="password" value="" data-v-5cb9a64e> <span data-v-5cb9a64e>Konck! Knock!</span> <button data-v-5cb9a64e>OK</button></label> <div class="footer" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><span data-v-5cb9a64e><i class="iconfont reco-theme" data-v-5cb9a64e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-5cb9a64e>vuePress-theme-reco</a></span> <span data-v-5cb9a64e><i class="iconfont reco-copyright" data-v-5cb9a64e></i> <a data-v-5cb9a64e><span data-v-5cb9a64e>🎈</span>
+            
+          <span data-v-5cb9a64e>2021 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-faf1ae92><div data-v-faf1ae92><div id="smart" class="wrapper-page" style="background-image:url(/img/bjt3.jpg);background-position-x:center;background-position-y:center;background-size:cover;background-repeat-x:no-repeat;background-repeat-y:no-repeat;" data-v-faf1ae92><header class="navbar" data-v-faf1ae92><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/favicon.ico" alt="须贺" class="logo"> <span class="site-name">须贺</span></a> <div class="links"><div id="dayNightSwitch" class="generalWrapper" data-v-32f44868><a class="click" data-v-32f44868><div class="onOff daySwitch" data-v-32f44868><div class="star star1" data-v-32f44868></div> <div class="star star2" data-v-32f44868></div> <div class="star star3" data-v-32f44868></div> <div class="star star4" data-v-32f44868></div> <div class="star star5" data-v-32f44868></div> <div class="star sky" data-v-32f44868></div> <div class="sunMoon" data-v-32f44868><div class="crater crater1" data-v-32f44868></div> <div class="crater crater2" data-v-32f44868></div> <div class="crater crater3" data-v-32f44868></div> <div class="cloud part1" data-v-32f44868></div> <div class="cloud part2" data-v-32f44868></div></div></div></a></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="iconfont undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/categories/收藏/" class="nav-link"><i class="iconfont undefined"></i>
+  收藏
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/安装/" class="nav-link"><i class="iconfont undefined"></i>
+  安装
+</a></li><li class="dropdown-item"><!----> <a href="/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/踩坑/" class="nav-link"><i class="iconfont undefined"></i>
+  踩坑
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/view/reward/" class="nav-link"><i class="iconfont undefined"></i>
+  奖励
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-faf1ae92></div> <aside class="sidebar" data-v-faf1ae92><div class="personal-info-wrapper" data-v-03833281 data-v-faf1ae92><img src="/img/author.png" alt="author-avatar" class="personal-img" data-v-03833281> <h3 class="name" data-v-03833281>
+    🎈
+  </h3> <div class="num" data-v-03833281><div data-v-03833281><h3 data-v-03833281>43</h3> <h6 data-v-03833281>文章</h6></div> <div data-v-03833281><h3 data-v-03833281>32</h3> <h6 data-v-03833281>标签</h6></div></div> <hr data-v-03833281></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/java/" class="nav-link"><i class="iconfont undefined"></i>
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/categories/收藏/" class="nav-link"><i class="iconfont undefined"></i>
+  收藏
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/安装/" class="nav-link"><i class="iconfont undefined"></i>
+  安装
+</a></li><li class="dropdown-item"><!----> <a href="/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/踩坑/" class="nav-link"><i class="iconfont undefined"></i>
+  踩坑
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/view/reward/" class="nav-link"><i class="iconfont undefined"></i>
+  奖励
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-5cb9a64e data-v-faf1ae92><h3 class="title" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e>kafka笔记</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><input type="password" value="" data-v-5cb9a64e> <span data-v-5cb9a64e>Konck! Knock!</span> <button data-v-5cb9a64e>OK</button></label> <div class="footer" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><span data-v-5cb9a64e><i class="iconfont reco-theme" data-v-5cb9a64e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-5cb9a64e>vuePress-theme-reco</a></span> <span data-v-5cb9a64e><i class="iconfont reco-copyright" data-v-5cb9a64e></i> <a data-v-5cb9a64e><span data-v-5cb9a64e>🎈</span>
+            
+          <span data-v-5cb9a64e>2021 - </span>
+          2023
+        </a></span></div></div></div> <div data-v-faf1ae92><main class="page"><div class="page-title" style="display:none;"><h1 class="title">kafka笔记</h1> <div class="page-info" data-v-0efa1f05><i class="iconfont reco-account" data-v-0efa1f05><span data-v-0efa1f05>🎈</span></i> <i class="iconfont reco-date" data-v-0efa1f05><span data-v-0efa1f05>2021-09-14</span></i> <i class="iconfont reco-eye" data-v-0efa1f05><span id="/view/docs/%E7%AC%94%E8%AE%B0/10.kafka.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-0efa1f05><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-0efa1f05><span class="tag-item" data-v-0efa1f05>kafka</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="概述"><a href="#概述" class="header-anchor">#</a> 概述</h2> <p>kafka是分布式基于的消息队列，<strong>实时处理</strong></p> <h2 id="入门"><a href="#入门" class="header-anchor">#</a> 入门</h2> <ul><li>特点</li> <li>发布订阅模式
+<ul><li>消费者拉取（比较费支援，维护长时轮询）</li> <li>管道主动推送 (消费者处理不即)</li></ul></li></ul> <h2 id="架构💨💨"><a href="#架构💨💨" class="header-anchor">#</a> 架构💨💨</h2> <p><img src="https://gitee.com/axcmsm/tmp/raw/master/bigdata/20210917174303.png" alt=""></p> <ul><li>生产者消息</li> <li>kakfa集群管理消息（borker主机，主题，分类，分区(提高鬓发度),小弟用来备份副本树算上老大 ）</li> <li>消费者消费信息（消费者组，消费者(某个分区只能由<strong>同组</strong>其中一个消费)</li> <li>zookeeper(管理注册信息)</li></ul> <blockquote><p>在0.9之前offset(消息偏移量)存储在zk中</p> <p>0.9之后存储在本地kafka(系统的)</p> <p>主要是记录消费位置，防止挂掉</p> <p>消费者是以拉取获取模式(速度快,要跟zk打交道,所以太过频繁了，高并发)</p> <p>所以存储到kafka本地里面，kafka默认存消息在磁盘(默认保留7天(168小时))</p></blockquote> <h2 id="安装部署"><a href="#安装部署" class="header-anchor">#</a> 安装部署</h2> <p>集群规划：3台zk 3台kafka</p> <p>修改:service配置文件 把borck.id改成为唯一 然后分发集群</p> <p>启动  -daemon表示以守护进程来启动</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/opt/module/kafka/bin/kafka-server-start.sh -daemon /opt/module/kafka/config/server.properties
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>命令行操作</strong>：topic（CRUD）</p> <ul><li>--list 查看</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>./bin/kafka-topics.sh --list --zookeeper hadoop111:2181
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li><p>往zk里创建数据 --create  需要指定topic主题 partitions分区个数  副本个数replication-factor</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>./bin/kafka-topics.sh --create --zookeeper hadoop111:2181 --topic first --partitions 2 --replication-factor 2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p>然后查看在你配置的logs目录里 就可以查看到创建的目录了 所以是放在磁盘的</p> <p>而且存放目录名 由主题+分区构成,启动日志到server.log查看</p> <p>默认是50个分区 一个副本</p></blockquote></li> <li><p>-detele删除</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code> ./bin/kafka-topics.sh --delete --zookeeper hadoop111:2181 --topic first
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p>如果设置了<code>delete.topic.enable 为true</code> 才能真正删除</p></blockquote></li> <li><p>describe 查看结构详细信息</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>./bin/kafka-topics.sh --describe --topic first --zookeeper hadoop111:2181
+<span class="token comment">#</span>
+Topic:first	PartitionCount:2	ReplicationFactor:2	Configs:
+	Topic: first	Partition: <span class="token number">0</span>	Leader: <span class="token number">2</span>	Replicas: <span class="token number">2,1</span>	Isr: <span class="token number">2,1</span>
+	Topic: first	Partition: <span class="token number">1</span>	Leader: <span class="token number">3</span>	Replicas: <span class="token number">3,2</span>	Isr: <span class="token number">3,2</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></li></ul> <p><strong>生产者消费者</strong>：<code>console-producer.sh生产者 ``console-consumer.sh消费者</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code> #生产者9092端口 主题topic 区域broker
+ ./bin/kafka-console-producer.sh --topic first --broker-list hadoop111:9092
+ #消费者
+ 老版本是连接到zk,0.9版本后是存储到本地
+./bin/kafka-console-consumer.sh --topic first --zookeeper  hadoop111:2181 #老版本
+./bin/kafka-console-consumer.sh --topic first --zookeeper  hadoop111:2181 --from-beginning 表示从开头的管道开始获取
+
+#新版启动 消息存储本地kafka,而kafka存储到logs中的主题offset偏移量
+./bin/kafka-console-consumer.sh --topic first --bootstrap-server  hadoop111:9092
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>删除数据除了删除kafka存储信息的目录还要删除zk中存储的位置信息zookeeper是默认目录</p> <p>重装zk数据(慎重)</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[hadoop101@axcmsm111 zkData]$ ll
+总用量 8
+-rw-rw-r--. 1 hadoop101 hadoop101   2 9月   4 17:36 myid #
+drwxrwxr-x. 2 hadoop101 hadoop101 162 9月  15 12:04 version-2 #数据信息
+-rw-rw-r--. 1 hadoop101 hadoop101   4 9月  15 12:04 zookeeper_server.pid #进程
+[hadoop101@axcmsm112 zkData]$ rm -rf version-2/  #删除所有数据
+#重启查看
+[zk: localhost:2181(CONNECTED) 0] ls /
+[zookeeper]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>工作流程：</p> <p>生产者生成数据，发送到kafka机器,机器中的每台机器，都有一个leader主题,里面由分区，消费者消费时存储的offset偏移量默认从0开始,还有对应的副本,且副本小弟一般跨机器放置,不然没意义。然后再到消费者组对其相应的机器主题来拉取数据。(都是面向主题的topic逻辑概念) 因为实际存储文件是主题+分区号的文件</p> <p><img src="https://gitee.com/axcmsm/tmp/raw/master/bigdata/image-20210915205600566.png" alt=""></p> <p>不能保证全局有序，只能保证区内有序</p> <p>存储数据的文件: 采用<strong>分片</strong>和<strong>索引</strong>的处理机制  (虽然存储到磁盘当中,但利用索引二分查找还是挺快的)</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[hadoop101@axcmsm111 first-0]$ ll
+总用量 0
+-rw-rw-r--. 1 hadoop101 hadoop101 10485760 9月  15 21:04 00000000000000000000.index
+-rw-rw-r--. 1 hadoop101 hadoop101        0 9月  15 21:04 00000000000000000000.log
+-rw-rw-r--. 1 hadoop101 hadoop101 10485756 9月  15 21:04 00000000000000000000.timeindex
+-rw-rw-r--. 1 hadoop101 hadoop101        0 9月  15 21:04 leader-epoch-checkpoint
+#默认log默认设置的大小是1G 超过就会创建一个新文件
+xxx.log 只存数据  
+xxx.index 记录log索引便新建文件时继续输入
+前面的xxx是记录当前文件的最小偏移量
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><strong>分区策略</strong>:</p> <p>数据封装成prodgeerRecord对象发送</p> <p>可指定分区号、主题、头信息等,如果输入kv的话k作为hash%%主题的分区个数得到分区值，什么都不指定，就进行轮询</p> <p><strong>数据可靠性</strong>:ISR(同步队列)</p> <p>通过规定完成相应的机器队列（时间），就可以发送数据,如果leater挂了 直接在队列里选leater</p> <p>队列选举移除了条数选项,isr占内存,而且是批次的,所以老队员会被踢出来，再选举再进入,频繁操作isr,zk耗费资源</p> <p>ack<strong>应答机制</strong>:提供了三种级别 根据可靠性和演出进行权衡</p> <ul><li>acks: 0不等待 1等待leater  all(-1) 等待leater和isr里面的(当isr同步完数据还每发ack时leader挂了会重新选举，重新发送数据，造成数据重复)</li> <li>一致性：HW（高匹配 消费一致性）leo（最后一个offset 存储一致性）:hw之前才对消费者可见,不然的用offset的话会报错</li></ul> <p><strong>EXACTLYonce</strong>  精准一次性消费（不重复，不丢失）</p> <ul><li>最少一次+幂等性=精准一次性</li> <li>开启幂等性 默认ack为-1, 用pid,分区,切片位置进行缓存</li> <li>只能解决单个会话，单次分区的数据重复问题(重启不行 )</li></ul> <p><strong>消费者</strong></p> <p>consumer采用pull到broker中读取数据</p> <p><strong>分区分配策略</strong>：可同时消费一个,多个主题，不能同时消费一个分区</p> <ul><li><p>轮询 RoundRobin (把消费者祖里面的所有主题当作一个主题，进行轮询)   按照组划分</p> <blockquote><p>所以需要前提条件保证当前消费者组里的消费者订阅的主题的一样的</p></blockquote></li> <li><p>范围 Range（默认） 按照单个主题划分的</p></li></ul> <p>当消费者组里面数量发送变化就会触发重新分配</p> <p><strong>offset维护</strong></p> <p>保存到zk 组 主题 分区</p> <p><strong>事务</strong>：(生产者)结合幂等性 解决精准一次写入kafka集群,加上事务能保证跨分区</p> <h2 id="api⭕⭕"><a href="#api⭕⭕" class="header-anchor">#</a> API⭕⭕</h2> <p><strong>生产者</strong>:异步发送 俩个线程 main和sender线程、共享变量线程RecordAccomalator</p> <ul><li>同步get</li> <li>回调函数new Callback()</li> <li>自定义拦截器</li></ul> <p><strong>消费者</strong>：</p> <ul><li>自动提取offset</li> <li>手动提交offset</li> <li>自定义存储offset</li></ul> <h2 id="对接flume"><a href="#对接flume" class="header-anchor">#</a> 对接Flume</h2> <p><strong>步骤</strong>：</p> <ul><li><p>配置flume配置文件</p> <div class="language-conf line-numbers-mode"><pre class="language-text"><code># define
+a1.sources = r1
+a1.sinks = k1
+a1.channels = c1
+# source
+a1.sources.r1.type = exec
+a1.sources.r1.command = tail -F -c +0 /opt/module/data/flume.log
+a1.sources.r1.shell = /bin/bash -c
+# sink
+a1.sinks.k1.type = org.apache.flume.sink.kafka.KafkaSink
+a1.sinks.k1.kafka.bootstrap.servers = 
+hadoop102:9092,hadoop103:9092,hadoop104:9092
+a1.sinks.k1.kafka.topic = first
+a1.sinks.k1.kafka.flumeBatchSize = 20
+a1.sinks.k1.kafka.producer.acks = 1
+a1.sinks.k1.kafka.producer.linger.ms = 1
+# channel
+a1.channels.c1.type = memory
+a1.channels.c1.capacity = 1000
+a1.channels.c1.transactionCapacity = 100
+# bind
+a1.sources.r1.channels = c1
+a1.sinks.k1.channel = c1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div></li> <li><p><strong>启动</strong> <strong>kafkaIDEA</strong> <strong>消费者</strong></p></li> <li><p><strong>进入</strong> <strong>flume</strong> <strong>根目录下，启动</strong> <strong>flume</strong></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code> bin/flume-ng agent -c conf/ -n a1 -f jobs/flume-kafka.conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p><strong>向</strong> <strong>/opt/module/data/flume.log</strong> <strong>里追加数据，查看</strong> <strong>kafka</strong> <strong>消费者消费情况</strong></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code> <span class="token builtin class-name">echo</span> hello <span class="token operator">&gt;&gt;</span> /opt/module/data/flume.log
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ul></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2021/9/19 下午9:57:24</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----></div></div>
+    <script src="/assets/js/app.7036e47e.js" defer></script><script src="/assets/js/4.ec8df83f.js" defer></script><script src="/assets/js/1.d2920358.js" defer></script><script src="/assets/js/2.245be42e.js" defer></script><script src="/assets/js/43.047ac597.js" defer></script><script src="/assets/js/12.44af248e.js" defer></script>
+  </body>
+</html>
